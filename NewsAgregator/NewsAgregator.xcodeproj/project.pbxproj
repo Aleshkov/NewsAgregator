@@ -97,12 +97,10 @@
 		75E673372687699500C41E41 /* NewsAgregator */ = {
 			isa = PBXGroup;
 			children = (
-				75E673382687699500C41E41 /* AppDelegate.swift */,
-				75E6733A2687699500C41E41 /* SceneDelegate.swift */,
+				75E6736A26876D2900C41E41 /* Application */,
+				75E6736926876C5300C41E41 /* ServiceLayer */,
+				75E6736826876C4000C41E41 /* DomainLayer */,
 				75E6733C2687699500C41E41 /* ViewController.swift */,
-				75E673412687699700C41E41 /* Assets.xcassets */,
-				75E673432687699700C41E41 /* LaunchScreen.storyboard */,
-				75E673462687699700C41E41 /* Info.plist */,
 			);
 			path = NewsAgregator;
 			sourceTree = "<group>";
@@ -123,6 +121,32 @@
 				75E6735C2687699700C41E41 /* Info.plist */,
 			);
 			path = NewsAgregatorUITests;
+			sourceTree = "<group>";
+		};
+		75E6736826876C4000C41E41 /* DomainLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DomainLayer;
+			sourceTree = "<group>";
+		};
+		75E6736926876C5300C41E41 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		75E6736A26876D2900C41E41 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				75E6733A2687699500C41E41 /* SceneDelegate.swift */,
+				75E673382687699500C41E41 /* AppDelegate.swift */,
+				75E673412687699700C41E41 /* Assets.xcassets */,
+				75E673432687699700C41E41 /* LaunchScreen.storyboard */,
+				75E673462687699700C41E41 /* Info.plist */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,7 +450,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NY3VS8XW85;
-				INFOPLIST_FILE = NewsAgregator/Info.plist;
+				INFOPLIST_FILE = NewsAgregator/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -445,7 +469,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NY3VS8XW85;
-				INFOPLIST_FILE = NewsAgregator/Info.plist;
+				INFOPLIST_FILE = NewsAgregator/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
