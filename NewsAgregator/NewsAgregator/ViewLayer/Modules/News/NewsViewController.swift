@@ -14,9 +14,17 @@ final class NewsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.presenter?.done()
+		self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.organize,
+																 target: self,
+																 action: #selector(rightBarButtonTap))
+		self.title = "News"
     }
     
     override func loadView() {
        self.view = NewsView()
     }
+
+	@objc private func rightBarButtonTap() {
+		self.presenter?.didTapSettingsButton()
+	}
 }

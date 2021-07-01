@@ -7,16 +7,25 @@
 
 import UIKit
 
-final class NewsRouter: Module {
-    
-    internal var vc: UIViewController
-    internal var completion: (() -> Void)?
-    
-    init(vc: UIViewController) {
-        self.vc = vc
+final class NewsRouter {
+
+	private let module: Module
+
+	private let completion: ((Module) -> Void)
+	private let showSettingsCompletion: ((Module) -> Void)
+
+	init(completion: @escaping ((Module) -> Void),
+		 showSettingsCompletion: @escaping ((Module) -> Void),
+		 module: Module) {
+		self.completion = completion
+		self.showSettingsCompletion = showSettingsCompletion
+		self.module = module
+	}
+    func finishModule() {
+		self.completion(self.module)
     }
 
-    func finish() {
-        self.completion?()
-    }
+	func showSettings() {
+		self.showSettingsCompletion(self.module)
+	}
 }

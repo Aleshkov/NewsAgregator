@@ -8,18 +8,23 @@
 import UIKit
 
 enum NewsModule {
-    
-    struct NewsModuleDependencies {
-    }
 
-    static func makeModule(dependencies: NewsModuleDependencies) -> Module {
-        let interactor = NewsInteractor()
-        let vc = NewsViewController()
-        let router = NewsRouter(vc: vc)
-        let presenter = NewsPresenter(router: router,
-                                      interactor: interactor)
-        vc.presenter = presenter
-        presenter.vc = vc
-        return router
-    }
+	struct Dependencies {
+		var completion: ((Module) -> Void)
+		var showSettingsCompletion: ((Module) -> Void)
+	}
+
+	static func makeModule(dependencies: Dependencies) -> Module {
+		let interactor = NewsInteractor()
+		let vc = NewsViewController()
+		let module = Module(vc: vc)
+		let router = NewsRouter(completion: dependencies.completion,
+								showSettingsCompletion: dependencies.showSettingsCompletion,
+								module: module)
+		let presenter = NewsPresenter(router: router,
+									  interactor: interactor)
+		vc.presenter = presenter
+		presenter.vc = vc
+		return module
+	}
 }

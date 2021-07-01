@@ -19,6 +19,10 @@ final class NewsPresenter {
     }
     
     func done() {
-        self.router.finish()
+        self.router.finishModule()
     }
+
+	func didTapSettingsButton() {
+		self.router.showSettings()
+	}
 }
