@@ -9,15 +9,15 @@ import UIKit
 
 class MainFlow {
     
-    private let dependencies: Dependencies
+    private let dependency: Dependency
     
-    init(dependencies: Dependencies) {
-        self.dependencies = dependencies
+    init(dependency: Dependency) {
+        self.dependency = dependency
     }
     
     func firstModule() -> Module {
-        let dependencies = NewsModule.NewsModuleDependencies()
-        var module = NewsModule.makeModule(dependencies: dependencies)
+        let dependency = NewsModule.NewsModuleDependencies()
+        var module = NewsModule.makeModule(dependencies: dependency)
         module.completion = {
             self.next1(module)
         }

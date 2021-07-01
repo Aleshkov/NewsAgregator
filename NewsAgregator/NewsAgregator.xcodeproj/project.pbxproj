@@ -14,10 +14,8 @@
 		75E673452687699700C41E41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75E673432687699700C41E41 /* LaunchScreen.storyboard */; };
 		75E673502687699700C41E41 /* NewsAgregatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E6734F2687699700C41E41 /* NewsAgregatorTests.swift */; };
 		75E6735B2687699700C41E41 /* NewsAgregatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E6735A2687699700C41E41 /* NewsAgregatorUITests.swift */; };
-		75E6736D2687700E00C41E41 /* DependencyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E6736C2687700E00C41E41 /* DependencyFactory.swift */; };
 		75E6736F2687706E00C41E41 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E6736E2687706E00C41E41 /* NetworkService.swift */; };
 		75E673712687712E00C41E41 /* MainFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E673702687712E00C41E41 /* MainFlow.swift */; };
-		75E673732687714F00C41E41 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E673722687714F00C41E41 /* Dependencies.swift */; };
 		75E6737626877AE300C41E41 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E6737526877AE300C41E41 /* Module.swift */; };
 		75E6737C26877CA600C41E41 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E6737B26877CA600C41E41 /* NewsView.swift */; };
 		75E6737E26877CB200C41E41 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E6737D26877CB200C41E41 /* NewsViewController.swift */; };
@@ -30,6 +28,8 @@
 		75E6738D26877DA100C41E41 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E6738C26877DA100C41E41 /* SettingsRouter.swift */; };
 		75E6738F26877DBB00C41E41 /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E6738E26877DBB00C41E41 /* SettingsInteractor.swift */; };
 		75E6739126877E8900C41E41 /* NewsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E6739026877E8900C41E41 /* NewsModule.swift */; };
+		75E673A0268DAEEF00C41E41 /* Dependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E6739F268DAEEF00C41E41 /* Dependency.swift */; };
+		75E673A2268DAF0F00C41E41 /* DependencyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E673A1268DAF0F00C41E41 /* DependencyFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,10 +63,8 @@
 		75E673562687699700C41E41 /* NewsAgregatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsAgregatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E6735A2687699700C41E41 /* NewsAgregatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAgregatorUITests.swift; sourceTree = "<group>"; };
 		75E6735C2687699700C41E41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		75E6736C2687700E00C41E41 /* DependencyFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyFactory.swift; sourceTree = "<group>"; };
 		75E6736E2687706E00C41E41 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		75E673702687712E00C41E41 /* MainFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlow.swift; sourceTree = "<group>"; };
-		75E673722687714F00C41E41 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
 		75E6737526877AE300C41E41 /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
 		75E6737B26877CA600C41E41 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		75E6737D26877CB200C41E41 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +77,8 @@
 		75E6738C26877DA100C41E41 /* SettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
 		75E6738E26877DBB00C41E41 /* SettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
 		75E6739026877E8900C41E41 /* NewsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModule.swift; sourceTree = "<group>"; };
+		75E6739F268DAEEF00C41E41 /* Dependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependency.swift; sourceTree = "<group>"; };
+		75E673A1268DAF0F00C41E41 /* DependencyFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,10 +129,9 @@
 		75E673372687699500C41E41 /* NewsAgregator */ = {
 			isa = PBXGroup;
 			children = (
-				75E6737726877B3000C41E41 /* Modules */,
+				75E67399268DA5A100C41E41 /* ViewLayer */,
 				75E6736A26876D2900C41E41 /* Application */,
 				75E6736926876C5300C41E41 /* ServiceLayer */,
-				75E6736826876C4000C41E41 /* DomainLayer */,
 				75E6733C2687699500C41E41 /* ViewController.swift */,
 			);
 			path = NewsAgregator;
@@ -156,13 +155,6 @@
 			path = NewsAgregatorUITests;
 			sourceTree = "<group>";
 		};
-		75E6736826876C4000C41E41 /* DomainLayer */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DomainLayer;
-			sourceTree = "<group>";
-		};
 		75E6736926876C5300C41E41 /* ServiceLayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,7 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				75E673742687721600C41E41 /* Flow */,
-				75E6736B26876FDF00C41E41 /* Dependencies */,
+				75E6736B26876FDF00C41E41 /* Dependency */,
 				75E6733A2687699500C41E41 /* SceneDelegate.swift */,
 				75E673382687699500C41E41 /* AppDelegate.swift */,
 				75E673412687699700C41E41 /* Assets.xcassets */,
@@ -185,13 +177,13 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		75E6736B26876FDF00C41E41 /* Dependencies */ = {
+		75E6736B26876FDF00C41E41 /* Dependency */ = {
 			isa = PBXGroup;
 			children = (
-				75E6736C2687700E00C41E41 /* DependencyFactory.swift */,
-				75E673722687714F00C41E41 /* Dependencies.swift */,
+				75E6739F268DAEEF00C41E41 /* Dependency.swift */,
+				75E673A1268DAF0F00C41E41 /* DependencyFactory.swift */,
 			);
-			path = Dependencies;
+			path = Dependency;
 			sourceTree = "<group>";
 		};
 		75E673742687721600C41E41 /* Flow */ = {
@@ -235,6 +227,14 @@
 				75E6738E26877DBB00C41E41 /* SettingsInteractor.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		75E67399268DA5A100C41E41 /* ViewLayer */ = {
+			isa = PBXGroup;
+			children = (
+				75E6737726877B3000C41E41 /* Modules */,
+			);
+			path = ViewLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,16 +366,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75E673732687714F00C41E41 /* Dependencies.swift in Sources */,
 				75E6739126877E8900C41E41 /* NewsModule.swift in Sources */,
 				75E6738226877CDD00C41E41 /* NewsRouter.swift in Sources */,
 				75E6736F2687706E00C41E41 /* NetworkService.swift in Sources */,
-				75E6736D2687700E00C41E41 /* DependencyFactory.swift in Sources */,
 				75E6738D26877DA100C41E41 /* SettingsRouter.swift in Sources */,
 				75E6737E26877CB200C41E41 /* NewsViewController.swift in Sources */,
 				75E6737C26877CA600C41E41 /* NewsView.swift in Sources */,
+				75E673A0268DAEEF00C41E41 /* Dependency.swift in Sources */,
 				75E6738026877CCD00C41E41 /* NewsInteractor.swift in Sources */,
 				75E6738B26877D8F00C41E41 /* SettingsViewController.swift in Sources */,
+				75E673A2268DAF0F00C41E41 /* DependencyFactory.swift in Sources */,
 				75E6738726877D6D00C41E41 /* SettingsView.swift in Sources */,
 				75E673712687712E00C41E41 /* MainFlow.swift in Sources */,
 				75E6733D2687699500C41E41 /* ViewController.swift in Sources */,
